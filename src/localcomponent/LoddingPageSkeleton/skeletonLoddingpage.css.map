@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,oCAAoC;EAC3D,kBAAkB,EAAE,IAAI;EACxB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,QAAQ,EAAE,IAAI;CACf",
+    "sources": [
+        "skeletonLoddingpage.scss"
+    ],
+    "names": [],
+    "file": "skeletonLoddingpage.css"
+}

@@ -1,0 +1,62 @@
+.eshopFooter {
+  border-top: 2px solid gray;
+}
+
+.eshopFooter .footer {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.eshopFooter .footer .footer-Logo {
+  margin-left: 0;
+}
+
+.eshopFooter .footer .footer-Text {
+  text-align: left;
+  width: 400px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.eshopFooter .footer .footer-infoside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.eshopFooter .footer .footer-infoside ul li {
+  line-height: 29px;
+}
+
+.eshopFooter .footer .footer-infoside > ul h4 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .eshopFooter .footer .footer-infoside {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.eshopFooter .copyRight {
+  border-top: 1px solid gray;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+/*# sourceMappingURL=footer.css.map */

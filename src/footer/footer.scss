@@ -1,0 +1,48 @@
+.eshopFooter {
+  border-top: 2px solid gray;
+  .footer {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    .footer-Logo {
+      margin-left: 0;
+    }
+    .footer-Text {
+      text-align: left;
+      width: 400px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .footer-infoside {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 15px;
+      ul li {
+        line-height: 29px;
+      }
+    }
+    .footer-infoside > ul h4 {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .footer-infoside {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .copyRight {
+    border-top: 1px solid gray;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+  }
+}

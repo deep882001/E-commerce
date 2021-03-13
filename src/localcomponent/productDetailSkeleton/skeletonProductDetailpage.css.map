@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,0BAA0B,CAAC;EACzB,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,QAAQ,EAAE,IAAI;EACd,SAAS,EAAE,IAAI;CAUhB;;AAjBD,AAQE,0BARwB,CAQxB,mBAAmB,CAAC,GAAG,CAAC;EACtB,aAAa,EAAE,IAAI;CACpB;;AAVH,AAWE,0BAXwB,CAWxB,UAAU,CAAC;EACT,YAAY,EAAE,GAAG;CAClB;;AAbH,AAcE,0BAdwB,CAcxB,yBAAyB,CAAC;EACxB,YAAY,EAAE,IAAI;CACnB",
+    "sources": [
+        "skeletonProductDetailpage.scss"
+    ],
+    "names": [],
+    "file": "skeletonProductDetailpage.css"
+}

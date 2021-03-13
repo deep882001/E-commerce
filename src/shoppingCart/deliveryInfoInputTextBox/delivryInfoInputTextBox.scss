@@ -1,0 +1,15 @@
+.inputBox {
+  font-size: 14px;
+  margin: 10px;
+  .textBox {
+    input {
+      border-radius: 22px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 49px;
+      padding-left: 15px;
+
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}

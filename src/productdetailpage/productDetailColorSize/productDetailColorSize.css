@@ -1,0 +1,44 @@
+.ProductDetailColorOptions {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.ProductDetailColorOptions ul {
+  display: inline-block;
+}
+
+.ProductDetailColorOptions .productDetailButtonColorName {
+  display: inline-block;
+  width: 100.26px;
+  font-size: 12px;
+  position: relative;
+}
+
+.ProductDetailColorOptions .productDetailButtonColorName .productColorButton {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.ProductDetailColorOptions .productDetailButtonColorName .productColorButton .colorImage {
+  width: 100%;
+}
+
+.ProductDetailColorOptions .productDetailButtonColorName .productColorName {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 2px 5px;
+  color: white;
+}
+
+.ProductDetailColorOptions .productDetailButtonColorName:hover .productColorName {
+  display: initial;
+}
+/*# sourceMappingURL=productDetailColorSize.css.map */

@@ -1,0 +1,114 @@
+.ProductDetailMain {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProductDetailMain .productDeliveryInfo {
+  width: 100%;
+  margin: 10px 0px;
+  display: inline-block;
+  font-size: 12px;
+  text-align: right;
+}
+
+.ProductDetailMain .productDeliveryInfo .Standardshipment {
+  display: inline-block;
+}
+
+.ProductDetailMain .productDeliveryInfo .Expressdelivery {
+  display: inline-block;
+}
+
+.ProductDetailMain .productDetail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(440px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  grid-gap: 50px;
+  font-size: 18px;
+}
+
+.ProductDetailMain .productDetail .productDetailImage {
+  text-align: center;
+}
+
+.ProductDetailMain .productDetail .productDetailTitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.ProductDetailMain .productDetail .productDetailSize ul {
+  margin-bottom: 30px;
+}
+
+.ProductDetailMain .productDetail .productDetailSize ul .sizeNumber {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ProductDetailMain .productDetail .productDetailSize ul .sizeNumber button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.ProductDetailMain .productDetail .productDetailSize ul .sizeNumber button:focus {
+  background-color: #fbb03b;
+}
+
+.ProductDetailMain .productDetail .productDetailPrice {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.ProductDetailMain .productDetail .productDetail-Quantity {
+  margin-bottom: 50px;
+}
+
+.ProductDetailMain .productDetail .productDetail-Quantity .productQuantityNumber {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.ProductDetailMain .productDetail .productDetail-Quantity .productQuantityNumber button {
+  border: none;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+.ProductDetailMain .productDetail .AddtoCart {
+  border: 1px solid #fbb03b;
+  display: inline;
+  background-color: #fbb03b;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ProductDetailMain .productDetail .productFavorite {
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.ProductDetailMain .productDetail .productFavorite .favoriteButton {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .productDetail {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=product-detail.css.map */

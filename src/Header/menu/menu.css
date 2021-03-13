@@ -1,0 +1,32 @@
+.menu {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu ul li {
+  list-style: none;
+  font-size: 15pt;
+  font-style: bold;
+  display: inline-block;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=menu.css.map */

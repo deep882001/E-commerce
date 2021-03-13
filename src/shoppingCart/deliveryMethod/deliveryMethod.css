@@ -1,0 +1,32 @@
+.deliveryMethod button {
+  line-height: 30px;
+  font-weight: bold;
+  width: 100%;
+  height: 188px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  padding: auto 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.deliveryMethod button .detail {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 720px) {
+  .paymentMethod button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .paymentMethod button {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=deliveryMethod.css.map */

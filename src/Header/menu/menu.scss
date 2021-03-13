@@ -1,0 +1,19 @@
+.menu {
+  display: grid;
+  text-align: center;
+  align-self: center;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  ul li {
+    list-style: none;
+    font-size: 15pt;
+    font-style: bold;
+    display: inline-block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

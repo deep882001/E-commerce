@@ -1,0 +1,42 @@
+//---------------------
+$primeryColor: #fbb03b;
+//---------------------
+.ProductDetailColorOptions {
+  display: inline-block;
+  margin-bottom: 0;
+  ul {
+    display: inline-block;
+  }
+
+  .productDetailButtonColorName {
+    display: inline-block;
+    width: 100.26px;
+    font-size: 12px;
+    position: relative;
+    .productColorButton {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+      .colorImage {
+        width: 100%;
+      }
+    }
+    .productColorName {
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 2px 5px;
+      color: white;
+    }
+
+    &:hover .productColorName {
+      display: initial;
+    }
+  }
+}

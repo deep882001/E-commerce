@@ -1,0 +1,22 @@
+$primeryColor: #fbb03b;
+.logo {
+  // align-self: center;
+  padding-left: 0;
+  font-size: 20pt;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+.logo:hover .logo_e {
+  color: $primeryColor;
+  transition: 0.2s ease-in-out;
+}
+.logo:hover .icon-hover {
+  fill: $primeryColor;
+  transition: 0.2s ease-in-out;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}

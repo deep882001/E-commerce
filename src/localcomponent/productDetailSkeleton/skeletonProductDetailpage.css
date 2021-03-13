@@ -1,0 +1,24 @@
+.SkeletonProductDetailpage {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  font-size: 18px;
+}
+
+.SkeletonProductDetailpage .SkeletonDetailpart div {
+  margin-bottom: 30px;
+}
+
+.SkeletonProductDetailpage .colorPart {
+  margin-right: 10%;
+}
+
+.SkeletonProductDetailpage .SkeletonColorandsizepart {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=skeletonProductDetailpage.css.map */

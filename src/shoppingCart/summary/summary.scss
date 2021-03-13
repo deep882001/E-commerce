@@ -1,0 +1,209 @@
+.summary {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  .emptyCart {
+    text-align: center;
+    font-size: 20px;
+    line-height: 85px;
+    button {
+      background-color: #fbb03b;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      padding: 9px 73px;
+    }
+  }
+  .summaryPart1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-self: center;
+    grid-column-gap: 20px;
+    grid-template-areas: 'paymentMethod deliveryMethod deliveryAddress';
+    .summaryTitle {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .paymentMethod {
+      grid-area: paymentMethod;
+      .summaryTitle {
+        margin-bottom: 20px;
+      }
+      .paymentMethodUl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        .paymentType {
+          border: 1px solid black;
+          padding: 10px 0px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          background-color: white;
+          .paymentImage {
+            width: 40%;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .deliveryMethod {
+      grid-area: deliveryMethod;
+      .deliveryType {
+        text-align: -webkit-center;
+        .deliveryTypeDetail {
+          width: 143px;
+          height: 188px;
+          text-align: center;
+          position: relative;
+          padding-top: 43px;
+          border: 1px solid;
+          border-radius: 20px;
+          img {
+            width: 62px;
+            height: 35px;
+          }
+          .changeDeliveryType {
+            position: absolute;
+            bottom: -13px;
+            right: 40px;
+            background-color: #fbb03b;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .deliveryAddress {
+      grid-area: deliveryAddress;
+      .changeAddress {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 40px;
+      }
+      .changeAddress:active {
+        color: #fbb03b;
+      }
+    }
+  }
+  .itemsummry {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'detail detail total';
+    margin: 50px 0px;
+    .iteamsDetail {
+      grid-area: detail;
+      .cartItem {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 50px 0px;
+        li {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .cartItemItitle {
+            font-size: 14px;
+            input {
+              border: none;
+              font-size: 16px;
+              font-family: '';
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+            }
+          }
+          .cartItemId {
+            opacity: 0.6;
+            font-size: 12px;
+          }
+          .cartQuantity {
+            .productQuantityNumber {
+              padding: 2px;
+            }
+          }
+          .cartImage {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+          }
+        }
+        .colorSizeTitle {
+          opacity: 0.7;
+          margin-right: 20px;
+        }
+      }
+    }
+    .totalPrice {
+      grid-area: total;
+      display: flex;
+      align-items: center;
+      .totalCostText {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #f1f1f1;
+        input {
+          border: none;
+          font-family: 'Poppins', sans-serif;
+          font-size: 16px;
+          width: 62px;
+          margin-left: 20px;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+  .summaryButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .backButton {
+      font-size: 16px;
+    }
+    // .continueShopping {
+    //   padding: 10px 30px;
+    //   border-radius: 20px;
+    //   display: inline-block;
+    //   border: 1px solid black;
+    // }
+    .placeOrder {
+      padding: 10px 30px;
+      border-radius: 20px;
+      background-color: #fbb03b;
+      display: inline-block;
+      border: 1px solid #fbb03b;
+    }
+  }
+}
+@media only screen and(max-width:720px) {
+  .summary {
+    .summaryPart1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-self: start;
+      grid-template-areas:
+        'paymentMethod paymentMethod'
+        'deliveryMethod deliveryAddress';
+    }
+  }
+}
+
+@media only screen and(max-width:750px) {
+  .summary .itemsummry {
+    grid-template-areas:
+      'detail detail detail'
+      '. total total';
+  }
+  .totalPrice {
+    justify-self: end;
+  }
+}

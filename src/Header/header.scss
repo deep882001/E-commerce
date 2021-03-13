@@ -1,0 +1,73 @@
+//----------------------
+$primeryColor: #fbb03b;
+//----------------------
+.header {
+  border-bottom: 2px solid gray;
+}
+.heading {
+  max-width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  .cart {
+    position: relative;
+    .cartIcon {
+    }
+    .totalQuantity {
+      position: absolute;
+      top: -11px;
+      right: 21px;
+      background-color: #fbb03b;
+      border-radius: 50%;
+      padding: 0px 6px;
+      font-size: 13px;
+    }
+  }
+  .heading_logo {
+    align-self: center;
+  }
+  .nav_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .nav_item > span {
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .icon-hover:hover {
+    fill: $primeryColor;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    grid-template-columns: 1fr 1fr;
+  }
+  .headerMenu {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .heading .nav_item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .search {
+    grid-column-start: 3;
+  }
+  .menuicon {
+    display: none;
+  }
+  .profile {
+    display: initial;
+  }
+}

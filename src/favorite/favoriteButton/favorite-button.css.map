@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,mBADiB,CACjB,eAAe,CAAC;EACd,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;CAChB;;AAXH,AAYE,mBAZiB,CAYjB,eAAe,AAAA,MAAM,CAAC;EACpB,gBAAgB,EAAE,OAAO;CAC1B",
+    "sources": [
+        "favorite-button.scss"
+    ],
+    "names": [],
+    "file": "favorite-button.css"
+}

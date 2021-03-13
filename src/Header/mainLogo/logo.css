@@ -1,0 +1,26 @@
+.logo {
+  padding-left: 0;
+  font-size: 20pt;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.logo:hover .logo_e {
+  color: #fbb03b;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover .icon-hover {
+  fill: #fbb03b;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=logo.css.map */
