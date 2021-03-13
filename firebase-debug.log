@@ -1,0 +1,50 @@
+[debug] [2021-03-13T23:05:12.924Z] ----------------------------------------------------------------------
+[debug] [2021-03-13T23:05:12.926Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init database
+[debug] [2021-03-13T23:05:12.926Z] CLI Version:   9.6.1
+[debug] [2021-03-13T23:05:12.926Z] Platform:      darwin
+[debug] [2021-03-13T23:05:12.926Z] Node Version:  v14.16.0
+[debug] [2021-03-13T23:05:12.928Z] Time:          Sat Mar 13 2021 18:05:12 GMT-0500 (Eastern Standard Time)
+[debug] [2021-03-13T23:05:12.928Z] ----------------------------------------------------------------------
+[debug] [2021-03-13T23:05:12.928Z] 
+[debug] [2021-03-13T23:05:12.933Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-13T23:05:12.933Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/deeppatel
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using e-commerce-b030d. 
+[debug] [2021-03-13T23:05:12.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-b030d [none]
+[debug] [2021-03-13T23:05:13.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-b030d 200
+[debug] [2021-03-13T23:05:13.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-b030d {"projectId":"e-commerce-b030d","projectNumber":"312522301168","displayName":"E-commerce","name":"projects/e-commerce-b030d","resources":{"hostingSite":"e-commerce-b030d"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-03-13T23:05:13.259Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-13T23:05:13.259Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-13T23:05:13.368Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Mar 2021 23:05:15 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-13T23:05:13.395Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/e-commerce-b030d/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-03-13T23:05:13.812Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Mar 2021 23:05:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-03-13T23:05:13.813Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/e-commerce-b030d/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-03-13T23:05:14.734Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Mar 2021 23:05:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
